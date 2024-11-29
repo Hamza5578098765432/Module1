@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adoptima Campaigns</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00bcd4;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .campaigns-section {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .campaigns-section h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .campaign-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  .campaign-table th, .campaign-table td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .campaign-table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .no-campaigns {
+    text-align: center;
+    font-size: 16px;
+    color: #777;
+    padding: 20px 0;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+  }
+  
+  .button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .create-button {
+    padding: 12px 24px;
+    font-size: 16px;
+    color: white;
+    background-color: #28a745;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .create-button:hover {
+    background-color: #218838;
+  }
+  
+  .footer {
+    margin-top: 40px;
+    background-color: #f8f9fa;
+    padding: 15px 20px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .footer-nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .footer-nav a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #007bff;
+  }
+  
+  .footer-nav a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .campaign-table th, .campaign-table td {
+      font-size: 14px;
+    }
+  
+    .footer-nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-nav a {
+      margin-bottom: 10px;
+    }
+  }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="menu-icon">☰</div>
+    <div class="logo">ADOPTIMA</div>
+    <div class="profile">
+      <img src="DataProfile.png" alt="Profile">
+    </div>
+  </header>
+  <main class="container">
+    <section class="campaigns-section">
+      <h1>Campaigns</h1>
+      <table class="campaign-table">
+        <thead>
+          <tr>
+            <th><input type="checkbox"></th>
+            <th>Name</th>
+            <th>ON/OFF</th>
+            <th>CPM</th>
+            <th>CPA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="5" class="no-campaigns">You don’t have any active campaigns</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="button-container">
+        <button class="create-button">Create</button>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <nav class="footer-nav">
+      <a href="#">Audience</a>
+      <a href="#">Campaign</a>
+      <a href="#">Dashboard</a>
+      <a href="#">Profile</a>
+      <a href="#">Setting</a>
+    </nav>
+  </footer>
+</body>
+</html>
